@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Selectors.css" />
+  </head>
+  <body>
+    <div class="universal-selector">
+      Universal selector (*)
+      <br />
+      Not applicable on :before and :after
+    </div>
+
+    <div class="direct-children-selector">
+      Direct Children (>)
+      <br />
+      Applicable to direct children on referenced tag
+      <div class="direct-parent">
+        <p>This a &lt;p&gt; tag inside parent class</p>
+        <div class="dicrect-child">
+          <p>This a &lt;p&gt; tag inside child class</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="adjacent-sibling-selector">
+      Adjacent Sibling (+)
+      <br />
+      Applicable to adjacent (next) siblings of referenced tag
+      <div class="box-wrap">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <!-- <p>Random</p> -->
+        <div class="box">3</div>
+        <div class="box">4</div>
+      </div>
+    </div>
+
+    <div class="general-sibling-selector">
+        General Sibling (~)
+        <br />
+        Applicable to general (all) siblings of referenced tag
+        <div class="box-wrap">
+          <div class="box">1</div>
+          <div class="box">2</div>
+          <!-- <p>Random</p> -->
+          <div class="box">3</div>
+          <div class="box">4</div>
+        </div>
+      </div>
+    
+    <div class="attribute-selector">
+        Attribute Selector ([])
+        <br />
+       <div class="att-wrap">
+        <input type="text" placeholder="Text"/>
+        <input type="email" placeholder="Email"/>
+        <a href="https://www.google.com" class="link-one">Google</a>
+        <a href="www.google.in" class="link-two">Google India</a>
+        <a href="www.facebook.in" class="another">Facebook India</a>
+       </div>
+    </div>
+  </body>
+</html>

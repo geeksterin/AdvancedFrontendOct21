@@ -1,0 +1,19 @@
+p {
+    color: red;
+}
+
+p {
+    color: blue
+}
+
+div p {
+    color: green
+}
+
+.divRef {
+    color: yellow
+}
+
+.divRef#divRefId {
+    color: brown
+}

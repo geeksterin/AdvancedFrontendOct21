@@ -1,0 +1,105 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  /* transition: <property> <duration> <timing-function> <delay> */
+  transition: width 2s;
+  margin: 100px 0 0 100px;
+}
+.box:hover {
+  width: 300px;
+}
+
+.box-rotate {
+  width: 100px;
+  height: 100px;
+  background: red;
+  transition: width 2s, height 2s, transform 2s;
+  /* transition-delay: 3s; */
+  margin: 100px 0 0 100px;
+}
+.box-rotate:hover {
+  width: 300px;
+  height: 300px;
+  background: green;
+  transform: rotate(180deg);
+}
+
+.circle-bounce {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 2s;
+  margin: 100px 0 0 100px;
+}
+.circle-bounce:hover {
+  transform: translateY(100px);
+  /* transform: rotate3d(0, 5, 0, 180deg); */
+}
+
+.animation-box-container {
+  width: 500px;
+  height: 500px;
+  background: black;
+  margin: 100px 0 0 100px;
+}
+.ball {
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 100%;
+  animation: move 3s ease-in;
+  /* animation: move 2s ease-in forwards infinite alternate; */
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(450px);
+  }
+  66% {
+    transform: translateX(450px) translateY(450px);
+  }
+  100% {
+    transform: translateX(450px);
+  }
+}
+
+.spinner {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  animation: spin 3s linear infinite;
+  margin: 100px 0 0 100px;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  width: 200px;
+  height: 200px;
+  animation: rotate 3s linear infinite;
+  border: 12px solid #0088a9;
+  margin: 100px 0 0 100px;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

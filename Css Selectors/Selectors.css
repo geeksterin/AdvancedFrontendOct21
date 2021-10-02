@@ -1,0 +1,86 @@
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body div {
+    margin-top: 10px;
+}
+
+.universal-selector,
+.direct-children-selector,
+.adjacent-sibling-selector,
+.general-sibling-selector,
+.attribute-selector {
+    width: 400px;
+    height: auto;
+    text-align: center;
+    border: 1px solid;
+}
+
+.box-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+.box {
+    background: cyan;
+    color: white;
+    width: 50px;
+    height: 50px;
+}
+
+.att-wrap input {
+    display: block;
+    margin: 10px
+}
+
+/* * {
+    background: blueviolet;
+    color: white
+} */
+
+/* .direct-parent > p {
+    background: yellowgreen;
+} */
+
+/* .adjacent-sibling-selector .box + .box {
+    background: coral;
+} */
+
+/* .general-sibling-selector .box ~ .box {
+    background: darkgoldenrod;
+} */
+
+/* input[type="text"] {
+    background: chocolate;
+} */
+
+
+/* a[href] {
+    color: green;
+}
+
+a[href^="http"] {
+    color: chartreuse;
+} */
+
+/* a[href$="in"] {
+    color: red;
+} */
+
+/* a[class|="another"] {
+    color: red;
+} */
+
+
+
+
+
+
