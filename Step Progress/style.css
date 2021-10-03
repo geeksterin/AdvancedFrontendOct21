@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+.container {
+  width:  100%;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
+
+.progressbar li {
+  list-style: none;
+  float: left;
+  width:  33.33%;
+  text-align: center;
+  position: relative;
+}
+
+.progressbar li:before {
+  content: counter(step);
+  counter-increment: step;
+  display: block;
+  width:  40px;
+  height: 40px;
+  border:  5px solid #00E676;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 39px;
+  margin: 0 auto 10px auto;
+  background: #FFFFFF;
+}
+
+.progressbar li:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+  background: #DCDCDC;
+  top: 20px;
+  left: -50%;
+  z-index: -1;
+}
+
+.progressbar li:first-child:after {
+  content: none;
+}
+
+.progressbar li.active:before {
+  background: #00E676;
+  color: #ffffff;
+  content: "✔";
+}
+
+.progressbar li.active + li:after {
+  animation: move 3s;
+  animation-fill-mode: forwards;
+  background: #00E676;
+}
+
+.progressbar {
+  counter-reset: step;
+}
+
+@keyframes move {
+  0% {
+    width: 0%;
+  }
+}

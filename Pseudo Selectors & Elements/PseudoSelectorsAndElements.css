@@ -1,0 +1,69 @@
+/* Pseudo Selectors */
+
+body {  
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100vh;
+    justify-content: space-around;
+  }
+  
+  .link:visited {
+    color:  green;
+  }
+  
+  .link:hover {
+    color: blue;
+  }
+  
+  .text:focus {
+    background: gray;
+  }
+  
+  .email:invalid {
+    background: red;
+  }
+  
+  /* .email:valid {
+    background: green;
+  } */
+  
+  li {
+    list-style: none;
+  }
+  
+  li:nth-child(even) {
+    background: cyan;
+  }
+  
+  .checkbox:checked:after {
+    content: "Checked";
+    margin: 15px;
+  }
+  
+  .zipText {
+    color: white;
+    background: black;
+  }
+  
+   /* Pseudo Elements */
+  
+  .line:first-letter {
+    color: red;
+  }
+  
+  .paragraph:first-line {
+    color: green;
+    text-transform: uppercase;
+  }
+  
+  .sample h4:before {
+    content: "Description: ";
+  }
+  
+  .sample h4:after {
+    content: " XYZ";
+  }
+  
+  
+  
