@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissor Game</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <h3>Rock Paper Scissor Game</h3>
+        <div class="button_container">
+            <button data-selection="r" onclick="selectOption(this);">🤘🏻</button>
+            <button data-selection="p" onclick="selectOption(this);">📰</button>
+            <button data-selection="s" onclick="selectOption(this);">✂</button>
+        </div>
+        <div class="play_container">
+            <div id="human_selection"></div>
+            <div id="computer_selection"></div>
+        </div>
+        <h3 id="result"></h3>
+        <script src="index.js"></script>
+    </body>
+</html>

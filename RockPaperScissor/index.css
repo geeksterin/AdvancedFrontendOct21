@@ -1,0 +1,30 @@
+.button_container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+button {
+    font-size: 2.5em;
+}
+
+.play_container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.play_container > div {
+    width: 200px;
+    height: 200px;
+    border: 5px solid black;
+}
+h3 {
+    text-align: center;
+}
+#result::before {
+    content: 'Result: ';
+}
+#human_selection, #computer_selection {
+    font-size: 5em;
+    text-align: center;
+}
