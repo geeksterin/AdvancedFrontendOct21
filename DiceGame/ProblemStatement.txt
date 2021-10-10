@@ -1,0 +1,12 @@
+1. Design a form which accepts:
+    - Player 1 Name
+    - Player 2 Name
+    - Total Score
+2. Design a dice board for two players
+3. When any player is playing other players dice roll button is disbaled
+4. Show winner gif on player board who has won the game & disabled all controls
+
+Homework:
+1. Allow player to restart the game
+2. Allow to start game with different players and score
+3. Implement polyfill for split, reverse & join
