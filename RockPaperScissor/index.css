@@ -26,5 +26,12 @@ h3 {
 }
 #human_selection, #computer_selection {
     font-size: 5em;
-    text-align: center;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* align-content: center; */
+    /* flex-direction: column; */
+    /* text-align: center; */
 }
