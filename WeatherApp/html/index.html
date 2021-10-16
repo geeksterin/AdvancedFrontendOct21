@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css"></link>
+    <title>Weather App</title>
+    <link
+    rel="stylesheet"
+    href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <input type="checkbox" id="flip"/>
+    <div class="container">
+        <div class="weather" id="weather">
+            <div class="weather-gradient"></div>
+            <div class="weather-information">
+                <div class="weather-day">Wednesday</div>
+                <div class="weather-date">16 Oct 2021</div>
+                <div class="weather-location">
+                    <i class="fas fa-map-marker-alt fa-sm"></i>
+                    <span class="city">Mumbai, IN</span>
+                </div>
+                <div class="weather-type">
+                    <div class="weather-image">
+                        <img src="http://openweathermap.org/img/wn/50d.png"/>
+                    </div>
+                    <div class="weather-temperature">32&deg;C</div>
+                    <div class="weather-description">Smoke</div>
+                </div>
+            </div>
+            <label class="hide-weather" for="flip">
+                <i class="fas fa-arrow-circle-left fa-2x"></i>
+            </label>
+        </div>
+        <div class="information" id="information">
+            <div class="information-list" id="information-list">
+                <div class="information-type">
+                    <div class="information-type-title">HUMDITY</div>
+                    <div class="information-type-value">43%</div>
+                </div>
+                <div class="information-type">
+                    <div class="information-type-title">WIND SPEED</div>
+                    <div class="information-type-value">2.57 km/hr</div>
+                </div>
+                <div class="information-type">
+                    <div class="information-type-title">VISIBILITY</div>
+                    <div class="information-type-value">3000</div>
+                </div>
+                <div class="information-type">
+                    <div class="information-type-title">AVG TEMP</div>
+                    <div class="information-type-value">32&deg;C</div>
+                </div>
+            </div>
+            <div class="change-location">
+                <form class="input-group" onsubmit="getWeatherInformation(event)">
+                    <input type="text" placeholder="Click Here To Enter Location" required/>
+                    <button class="button" type="submit">
+                        <i class="fas fa-search fa-1x"></i>
+                    </button>
+                </form>
+            </div>
+            <label class="hide-information" for="flip">
+                <i class="fas fa-arrow-circle-right fa-2x"></i>
+            </label
+        </div>
+    </div>
+</body>
+<script src="../scripts/index.js"></script>
+</html>
