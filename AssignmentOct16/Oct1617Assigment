@@ -1,0 +1,32 @@
+* Create a weather app
+    1. Decide on your wireframe
+    2. All features from existing weather app
+    3. On inital load get data from API
+
+
+* Develop a user management dashboard:
+    1. Render (display) list of users
+    2. Allow adding new user to list
+    3. Edit exixsting user details
+    4. Delete existing project from list
+    5. Search projects from given list 
+    (i.e - only show users whose 
+    name matches with one in list)
+
+Avatar URLs
+https://demos.creative-tim.com/argon-dashboard-pro/assets/img/theme/team-1.jpg
+
+Data = [
+    {
+        projectName: "",
+        startDate: ""
+        status: "",
+        members: [
+            {
+                name: "",
+                avatarUrl: ""
+            }
+        ],
+        progress: ""
+    }
+]

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async JS</title>
+  </head>
+  <style>
+          .spacing {
+              margin: 1vw;
+          }
+  </style>
+  <body>
+      <div class="spacing">
+          <button onclick="startTimeOut()">Start Timeout</button>
+          <button onclick="stopTimeOut()">Stop Timeout</button>
+      </div>
+      <div class="spacing">
+        <button onclick="startInterval()">Start Interval</button>
+        <button onclick="stopInterval()">Stop Interval</button>
+    </div>
+    <div class="spacing">
+        <button class="add-random-number">Add Random Number</button>
+        <button class="add-random-text">Add Random Text</button>
+        <h1 id="random-number"></h1>
+        <h1 id="random-text"></h1>
+    </div>
+  </body>
+  <script src="../scripts/setTimeout.js"></script>
+  <script src="../scripts/setInterval.js"></script>
+  <script src="../scripts/workerDemo.js"></script>
+</html>
