@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Timer App</title>
+    </head>
+    <body>
+        <h3>Timer App</h3>
+        <h2 id="timerTime">00:00:00</h2>
+        <button id="startTimerButton">Start</button>
+        <button id="stopTimerButton">Stop</button>
+
+        <script>
+            let startBtn    = document.getElementById('startTimerButton');
+            let stopBtn     = document.getElementById('stopTimerButton');
+            let counter     = 0;
+            let intervalRef = 0;
+
+            String.prototype.padding = function() {
+                let str = this;
+                if(str.length == 1) {
+                    str = "0" + str;
+                }
+                return str;
+            }
+
+            function updateTimeUI() {
+                let timerElem = document.getElementById('timerTime');
+
+                let hours   = "" + Math.floor(counter / 3600);
+                let minutes = "" + Math.floor(counter / 60);
+                let seconds = "" + (counter % 60);
+                hours    = hours.padding();
+                minutes  = minutes.padding();
+                seconds  = seconds.padding();
+                let time = `${hours}:${minutes}:${seconds}`;
+
+                timerElem.innerText = time;
+            }
+
+            
+            startBtn.addEventListener('click', function() {
+                if(intervalRef != 0) {
+                    intervalRef = setInterval(function() {
+                        counter += 1;
+                        updateTimeUI();
+                    }, 1000);
+                }
+            });
+
+            stopBtn.addEventListener('click', function() {
+                clearInterval(intervalRef);
+                intervalRef = 0;
+            });
+            
+        </script>
+    </body>
+</html>
