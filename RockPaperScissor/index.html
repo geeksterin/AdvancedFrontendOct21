@@ -6,21 +6,28 @@
     </head>
     <body>
         <h3>Rock Paper Scissor Game</h3>
+        <input type="text" placeholder="Enter Session ID" id="sessionID"/>
+        <button class="normal-font" onclick="joinSession();">Join Session</button>
+        <button class="normal-font" onClick="createSession();">Create a new Session</button>
+        <br />
+        <br />
         <div class="button_container">
-            <button data-selection="r" onclick="selectOption(this);">🤘🏻</button>
-            <button data-selection="p" onclick="selectOption(this);">📰</button>
-            <button data-selection="s" onclick="selectOption(this);">✂</button>
+            <button data-selection="R" onclick="setSelection(this);">🤘🏻</button>
+            <button data-selection="P" onclick="setSelection(this);">📰</button>
+            <button data-selection="S" onclick="setSelection(this);">✂</button>
         </div>
         <div class="play_container">
-            <div id="human_selection"></div>
-            <div id="computer_selection"></div>
+            <div id="player1_selection"></div>
+            <div id="player2_selection"></div>
         </div>
         <h3 id="result"></h3>
         <p>
-            Computer has won <span id="computer_score"></span> rounds.
+            Player1 has won <span id="player1_score"></span> rounds.
             <br />
-            Human has won <span id="human_score"></span> rounds.
+            Player2 has won <span id="player2_score"></span> rounds.
         </p>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
         <script src="index.js"></script>
     </body>
 </html>

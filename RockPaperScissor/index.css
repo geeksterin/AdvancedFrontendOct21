@@ -3,6 +3,10 @@
     justify-content: center;
     gap: 10px;
 }
+.normal-font {
+    font-size: inherit;
+}
+
 button {
     font-size: 2.5em;
 }
@@ -24,7 +28,7 @@ h3 {
 #result::before {
     content: 'Result: ';
 }
-#human_selection, #computer_selection {
+#player1_selection, #player2_selection {
     font-size: 5em;
     /* text-align: center; */
     display: flex;
