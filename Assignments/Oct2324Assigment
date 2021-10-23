@@ -1,0 +1,24 @@
+// Features
+1. Develop an image gallery
+2. I should able to download the image
+3. Onhover of image 2 icons should be visible (enalarge, download)
+4. OnHover on image at center of image description w.r.t image should be visible
+5. Search based on image description
+6. You cannot use 3rd party UI libs
+7. It should be responsive
+
+// Approach
+1. Collect any images
+let images = [{
+    imageUrl: "",
+    imageDescription: "",
+    imageId: ""
+}, {
+    imageUrl: "",
+    imageDescription: "",
+    imageId: ""
+}]
+2. Iterate over image and manipulate the DOM
+
+// Referenece Mockup
+https://unsplash.com/
