@@ -1,0 +1,17 @@
+Using Yarn
+yarn create react-app <APPNAME>
+
+Using Npx
+npx create-react-app <APPNAME>
+
+Using Npm
+npm install -g create-react-app
+create-react-app <APPNAME>
+
+Install Package
+yarn add <PACKAGENAME> -g
+npm install <PACKAGENAME> -g
+
+Uninstall Package
+yarn remove <PACKAGENAME> -g
+npm uinstall <PACKAGENAME> -g

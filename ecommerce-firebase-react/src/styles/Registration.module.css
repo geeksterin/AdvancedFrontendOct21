@@ -1,0 +1,35 @@
+.box {
+    display: flex;
+    max-width: 100%;
+    min-height: 98vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box .formControl {
+    width: 30%;
+    margin: 10px;
+}
+
+.box .formControl .passwordIcon {
+    cursor: pointer;
+}
+
+.box .loginButton {
+    width: 30%;
+    margin: 10px;
+}
+
+.box .signupButton {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px;
+}
+
+.box .signupButton .spacing {
+    margin-left: 5px;
+}
