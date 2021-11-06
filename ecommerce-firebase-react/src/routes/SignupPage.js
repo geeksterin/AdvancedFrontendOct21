@@ -15,12 +15,14 @@ import {
   Lock,
   Visibility,
   VisibilityOff,
-  Login,
   AccountCircle,
 } from "@mui/icons-material";
+import { initializeFirestore } from "../helperFunctions/firebase";
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { doc, setDoc } from "firebase/firestore";
 import { Link, useHistory } from "react-router-dom";
 import Alert from "../components/Alert";
+import { userCollection, userJson } from "../Constants";
 import style from "../styles/Registration.module.css";
 
 const OutlinedTextInput = styled(OutlinedInput)({
@@ -45,6 +47,7 @@ const LoginButton = styled(Button)({
 function SignupPage(props) {
   const history = useHistory();
   const [email, setEmail] = useState("");
+  const [db] = useState(() => initializeFirestore());
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
@@ -64,6 +67,15 @@ function SignupPage(props) {
     }
     createUserWithEmailAndPassword(getAuth(), email, password)
       .then((userCredentials) => {
+        let data = JSON.parse(JSON.stringify(userJson));
+        data.userEmail = userCredentials?.user?.email || email;
+        data.userId = userCredentials?.user?.uid;
+        return setDoc(
+          doc(db, userCollection, userCredentials?.user?.uid),
+          data
+        );
+      })
+      .then((documentRef) => {
         history.push("/");
       })
       .catch((error) => {
@@ -75,7 +87,7 @@ function SignupPage(props) {
 
   return (
     <Box className={style.box}>
-      <Typography variant="h4">Signip</Typography>
+      <Typography variant="h4">Signup</Typography>
       <FormControl className={style.formControl}>
         <Label htmlFor="outlined-adornment-email">Email</Label>
         <OutlinedTextInput

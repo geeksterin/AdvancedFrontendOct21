@@ -1,5 +1,5 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
 // import './index.css';
 // import App from './App';
 // import ClassComponent from './components/ClassComponent';
@@ -9,8 +9,10 @@ import ReactDOM from 'react-dom';
 // import Counter from "./states/Counter";
 // import ConditionalRenderer from './conditionalRenderer/ConditionalRenderer';
 // import FragementsDemo from './fragementsDemo/FragementsDemo';
-import ListAndKeys from './listAndKeys/ListAndKeys';
-import reportWebVitals from './reportWebVitals';
+// import ListAndKeys from './listAndKeys/ListAndKeys';
+// import LifeCycles from "./LifeCycles/LifeCycles";
+import RefsDemo from "./Refs/RefsDemo";
+import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -22,9 +24,11 @@ ReactDOM.render(
     {/* <Counter /> */}
     {/* <ConditionalRenderer /> */}
     {/* <FragementsDemo /> */}
-    <ListAndKeys />
+    {/* <ListAndKeys /> */}
+    {/* <LifeCycles /> */}
+    <RefsDemo />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function

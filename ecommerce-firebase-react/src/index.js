@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import { initializeFirebase } from "./helperFunctions/firebase";
 import reportWebVitals from "./reportWebVitals";
 import App from "./App";
+import "./styles/Global.css";
 
 initializeFirebase();
 

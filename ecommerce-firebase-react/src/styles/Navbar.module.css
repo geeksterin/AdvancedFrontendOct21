@@ -1,0 +1,23 @@
+.iconColor {
+  color: #ffffff;
+}
+
+.logoContainer {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.logoContainer img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 100%;
+}
+
+.spacing {
+  flex-grow: 1;
+}
