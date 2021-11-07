@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function LoggedInPage(props) {
+    // useEffect(() => {
+    //     return () => alert("Unmount")
+    // }, [])
     const { toogleUserLogin } = props;
     return (
         <div>
@@ -9,5 +12,14 @@ function LoggedInPage(props) {
         </div>
     );
 }
+
+// class LoggedInPage extends React.Component {
+//     componentWillUnmount() {
+//         alert("Unmount")
+//     }
+//     render() {
+//         return <div><button onClick={() => this.props.toogleUserLogin(false)}>LOG OUT</button></div>
+//     }
+// }
 
 export default LoggedInPage;

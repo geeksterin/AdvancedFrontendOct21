@@ -10,8 +10,10 @@ import ReactDOM from "react-dom";
 // import ConditionalRenderer from './conditionalRenderer/ConditionalRenderer';
 // import FragementsDemo from './fragementsDemo/FragementsDemo';
 // import ListAndKeys from './listAndKeys/ListAndKeys';
-// import LifeCycles from "./LifeCycles/LifeCycles";
-import RefsDemo from "./Refs/RefsDemo";
+// import LifeCycles from "./lifeCycles/LifeCycles";
+// import RefsDemo from "./Refs/RefsDemo";
+// import UncontrolledComponent from "./uncontrolledComponent/UncontrolledComponent";
+import ControlledComponent from "./controlledComponent/ControlledComponent";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
@@ -26,7 +28,9 @@ ReactDOM.render(
     {/* <FragementsDemo /> */}
     {/* <ListAndKeys /> */}
     {/* <LifeCycles /> */}
-    <RefsDemo />
+    {/* <RefsDemo /> */}
+    {/* <UncontrolledComponent /> */}
+    <ControlledComponent />
   </React.StrictMode>,
   document.getElementById("root")
 );

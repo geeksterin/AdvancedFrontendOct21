@@ -1,0 +1,9 @@
+.categoryContainer {
+  width: 100%;
+  padding: 10px;
+  height: auto;
+}
+
+.itemCard {
+  width: 345px;
+}
