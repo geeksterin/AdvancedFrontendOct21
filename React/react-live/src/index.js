@@ -13,7 +13,10 @@ import ReactDOM from "react-dom";
 // import LifeCycles from "./lifeCycles/LifeCycles";
 // import RefsDemo from "./Refs/RefsDemo";
 // import UncontrolledComponent from "./uncontrolledComponent/UncontrolledComponent";
-import ControlledComponent from "./controlledComponent/ControlledComponent";
+// import ControlledComponent from "./controlledComponent/ControlledComponent";
+// import Main from "./contextHook/Main";
+// import CounterReducer from "./reducerHook/CounterReducer";
+import RenderPropDemo from "./renderProps/RenderPropDemo";
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
@@ -30,7 +33,10 @@ ReactDOM.render(
     {/* <LifeCycles /> */}
     {/* <RefsDemo /> */}
     {/* <UncontrolledComponent /> */}
-    <ControlledComponent />
+    {/* <ControlledComponent /> */}
+    {/* <Main /> */}
+    {/* <CounterReducer /> */}
+    <RenderPropDemo />
   </React.StrictMode>,
   document.getElementById("root")
 );
