@@ -4,10 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.24.0",
     "nodemon": "^2.0.15",
-    "redux": "^4.1.2"
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.0"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon asyncActions.js",
+    "dev": "nodemon index.js"
   }
 }

@@ -70,15 +70,15 @@ function reducer(state = initialSate, action) {
 // Registers listeners via subscribers (listener)
 // Handles unregistering of listners via the function returned by subsscribe(listener)
 
-const store = createStore(reducer);
-console.log("Initial state", store.getState());
-const unsunbscribe = store.subscribe(() =>
-  console.log("Updated state", store.getState())
-);
-store.dispatch(buyCar());
-store.dispatch(buyCar());
-store.dispatch(buyCar());
-store.dispatch(buyBike());
-store.dispatch(buyBike());
-store.dispatch(buyBike());
-unsunbscribe();
+// const store = createStore(reducer);
+// console.log("Initial state", store.getState());
+// const unsunbscribe = store.subscribe(() =>
+//   console.log("Updated state", store.getState())
+// );
+// store.dispatch(buyCar());
+// store.dispatch(buyCar());
+// store.dispatch(buyCar());
+// store.dispatch(buyBike());
+// store.dispatch(buyBike());
+// store.dispatch(buyBike());
+// unsunbscribe();
